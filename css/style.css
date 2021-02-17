@@ -39,12 +39,23 @@
     text-align: center;
 }
 
-/* main */
-.main {
-    padding: 3rem 0.5rem;
+.oclock-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
-.paragraph {
+.oclock-link:hover {
+    text-decoration: underline;
+}
+
+/* main */
+.main {
+    padding: 1rem 0.5rem 3rem;
+}
+
+.main__header,
+.main__resume {
     text-align: center;
     padding-bottom: 2rem;
 }
@@ -66,6 +77,6 @@
     padding: 0.8rem;
 }
 
-.footer > .heart {
-    font-size: 1.5rem;
+.fa-heart{
+    font-size: 1.1rem;
 }
