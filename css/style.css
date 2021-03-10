@@ -22,25 +22,23 @@
 
 
 /* nav bar */
-.fab {
+.navbar .fab {
     font-size: 2rem;
     color: white;
     padding: 0.5rem 2rem;
 }
 
-.inline-fab {
-    padding: 0;
-    font-size: 1.5rem;
-    color: black;
-}
+
 
 .header__title,
 .navbar {
     text-align: center;
 }
 
-.fa-php{
-    font-size: 1rem;
+.fa-php {
+    padding: 0 3px;
+    font-size: 1.6rem;
+    color: black;
 }
 
 .oclock-link {
