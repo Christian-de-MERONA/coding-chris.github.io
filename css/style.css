@@ -54,10 +54,33 @@
     padding: 1rem 0.5rem 3rem;
 }
 
+.section{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 0 0.5rem grey;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.section__list {
+    transition: all 1s ease-in;
+    opacity: 100;
+}
+
+
+
 .main__header,
 .main__resume {
     text-align: center;
     padding-bottom: 2rem;
+}
+
+.list-button {
+    width: 4rem;
 }
 
 .list {
@@ -80,3 +103,9 @@
 .fa-heart{
     font-size: 1.1rem;
 }
+
+.list-hidden {
+    display: none;
+    opacity: 0;
+}
+
