@@ -2,15 +2,6 @@ let app = {
     init: function(){
         app.addSectionsToDOM();
 
-    // },
-    // showList:function(evt){
-    //     const mouseoverElement = evt.target;
-    //     mouseoverElement.closest(".section").classList.remove("list-hidden");
-    // },
-    // hideList:function(evt){
-    //     const mouseoverElement = evt.target;
-    //     mouseoverElement.closest(".section").classList.add("list-hidden");
-
     },
     addSectionsToDOM:function(){
         // get sections div
@@ -57,20 +48,6 @@ let app = {
             sectionsBlock.appendChild(newSection);
         }
 
-        // call listener function to add listeners to all sections
-        app.addAllListeners();
-
-
-    // },
-    // addAllListeners:function(){
-    //     // get all sections 
-    //     let sectionList = document.querySelectorAll('.section');
-
-    //     // add listeners to each section
-    //     for (section of sectionList){
-    //         section.addEventListener("mouseover", app.showList);
-    //         section.addEventListener("mouseleave", app.hideList);
-    //     }
     }
 
     

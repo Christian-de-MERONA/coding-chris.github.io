@@ -167,7 +167,6 @@ body{
 }
 
 .skill{
-    height: 250px;
     width: 100%;
     display: flex;
     justify-content: space-between;
