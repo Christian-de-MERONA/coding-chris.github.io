@@ -26,10 +26,11 @@ let app = {
 
             // get title element of section template
             let sectionTitle = newSection.querySelector(".section__title");
+            
+            sectionTitle.innerHTML = '<i class="' + section.icon + ' inline-fab"></i>';
 
             // get list element of section template
             let sectionList = newSection.querySelector(".section__list");
-            sectionTitle.textContent = section.title;
 
             //  for each element in listElements
             for (listItem of section.listElements){
