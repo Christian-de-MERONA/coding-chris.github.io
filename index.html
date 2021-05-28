@@ -23,12 +23,30 @@
             <img src="images/symfony_project_banner.png" class="header__background-image">
         </header>
         <main class="main">
-            <h1 class="main__header">Welcome to my coding portfolio</h1>
-            <p class="main__resume">
-                I am a web developper specialized in <i class="fab fa-php inline-fab"></i> and it's powerfull framework Symfony at the <a href="https://oclock.io/formations/developpeur-web" class="oclock-link">O'clock</a>  school.
-            </p>
-            <h2>My skills</h2>
-            <div id="sections">
+            <h2 class="main__header">My trainings</h2>
+            <div class="main__resume">
+                <p>
+                    I started coding back in 2013 with Microsoft's VBA. Granted some would say that it's not a programming language. However the mechanisms I learned applied very much to what is used in "real" programming languages.
+                </p>
+                <ul class="resume__list">
+                    <li>Variable declarations</li>
+                    <li>Conditions and loops</li>
+                    <li>Functions</li>
+                    <li>Data manipulation</li>
+                    <li>Algorithms</li>
+                </ul> 
+                <p>
+                    I then wanted to level up my game and started teaching my self python to develop a tool to remove a tedious task for my team and myself.
+                </p>
+                <p>
+                    The result : a program that manipulated the computer's registry and accessed web pages to basically do the work for us.
+                </p> 
+                <p>
+                    After this success I was decided ! Manipulating web pages was interesting but I thought that making web sites and web application interested me even more. I wanted to pursue a carrier in web developpement and ended up attending the <a href="https://oclock.io/formations/developpeur-web" class="oclock-link">O'clock</a> school Web developper Course.
+                </p>
+            </div>
+            <h2 class="main__header">My skills</h2>
+            <div id="skills">
 
             </div>
 
@@ -38,8 +56,8 @@
                 Made with <i class="fas fa-heart"></i> in Charvieu
             </div>
 
-            <div>
-                Php icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            <div class="footer__authors-attributes">
+                Php icon made by <a href="https://www.freepik.com" title="Freepik" class="footer__link">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="footer__link">www.flaticon.com</a>
             </div>
 
         </footer>
@@ -48,10 +66,10 @@
     <script src="script/sections.js"></script>
     <script src="script/script.js"></script>
 </body>
-<template id="section-template">
-    <section class="section list-hidden">
-        <h3 class="section__title"></h3>
-        <ul class="section__list">
+<template id="skills-template">
+    <section class="skill">
+        <div class="skill__icon"></div>
+        <ul class="skill__list">
         </ul>
     </section>
 </template>

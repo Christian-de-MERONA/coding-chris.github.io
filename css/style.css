@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .header {
     background-color: black;
     width: 100%;
-    padding: 0.5rem;
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -20,12 +20,20 @@
     align-items: flex-start;
 }
 
+
 .header__background-image{
     position: absolute;
-    width: 100%;
+    max-width: 100%;
+    min-width: 900px;
     top: 0;
     opacity: 0.5;
     z-index: -1;
+    min-height: 500px;
+}
+
+.header__title{
+    font-size: 3rem;
+    letter-spacing: 6px;
 }
 
 .header__title,
@@ -33,12 +41,14 @@
     color: white;
     text-shadow: 0 0 2px black, 0 0 2px black;
     padding-bottom: 5rem;
+    padding-left: 5%;
 }
 
 .header__subtitle{
     width: 50%;
     font-size: 1.3rem;
     line-height: 2.5rem;
+    letter-spacing: 2px;
 }
 
 .navbar{
@@ -57,19 +67,16 @@
     color: blue;
 } */
 
-.header {
-    padding: 5% 0 0 5% ;
-}
 
 
 .oclock-link {
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
     color: black;
 }
 
 .oclock-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -81,41 +88,40 @@
 }
 
 /* icon colors*/
-.section__title > .fa-html5{
+.skill__icon > .fa-html5{
  color: blue;
 }
-.section__title > .fa-css3-alt{
+.skill__icon > .fa-css3-alt{
  color: red;
 
 }
-.section__title > .fa-github,
-.section__title > .fa-object-group{
+.skill__icon > .fa-github,
+.skill__icon > .fa-object-group{
  color: black;
 }
 
-.section__title > .fa-bootstrap{
+.skill__icon > .fa-bootstrap{
  color: rgb(70, 0, 128);
 }
-.section__title > .fa-php{
+.skill__icon > .fa-php{
  color: rgb(151, 73, 151);
  font-weight: bold;
 }
 
-.section__title > .fa-database{
+.skill__icon > .fa-database{
  color: grey;
 }
 
-.section__title > .fa-js-square{
+.skill__icon > .fa-js-square{
  color: rgb(238, 220, 61);
 }
 
 /* container */
-.container {
+#skills {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .inline-fab {
@@ -127,56 +133,55 @@
     font-size: 1.2rem;
 }
 
-.section__title > .inline-fab{
+.skill__icon > .inline-fab{
     font-size: 7rem;
 }
 
 
-
 /* main */
 .main {
-    padding: 1rem 0.5rem 3rem;
+    margin: 0 20% 0 20%;
 }
 
-.section{
+.skill{
     height: 250px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 0 0 0.5rem grey;
+    justify-content: space-between;
+    align-items: center;
     margin: 1rem 0;
     padding: 1rem;
-    border-radius: 4px;
     position: relative;
-    overflow: hidden;
-    z-index: 2;
+}
+
+.skill:nth-child(2n){
+    flex-direction: row-reverse;
 }
 
 
-.section__title {
-    position: absolute;
-    transition: all 0.5s ease-in;
-    top:5px;
-    font-size: 2rem;
-    z-index: 1;
-}
-
-.section__list {
-    padding-left: 3rem;
-    opacity: 100%;
-    padding-bottom: 0;
-    position: absolute;
-    transition: all 0.5s ease-in;
-    z-index: 1;
-
-}
-
-
-.main__header,
-.main__resume {
+.skill__icon,
+.skill__list {
+    width: 50%;
     text-align: center;
-    padding-bottom: 2rem;
+}
+
+.skill__list{
+    list-style: none;
+}
+
+.main__header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    font-size: 3rem;
+}
+
+.main__resume,
+.resume__list{
+    line-height: 2rem;
+}
+
+.resume__list{
+    padding-left: 2rem;
 }
 
 .list-button {
@@ -186,8 +191,6 @@
 .list {
     margin-left: 3rem;
 }
-
-
 
 .footer {
     background-color: black;
@@ -204,19 +207,26 @@
     font-size: 1.1rem;
 }
 
-.list-hidden > .section__list{
-    /* display: none; */
+/* .list-hidden > .skill__list{
     opacity: 0;
     padding-bottom: 200px;
 }
 
-.list-hidden > .section__title{
+.list-hidden > .skill__icon{
     top: 100px;
     font-size: 3rem;
+} */
+
+.footer__authors-attributes{
+    font-size: x-small;
+}
+
+.footer__link {
+    color: white;
 }
 
 @media (min-width:425px){
-    .list-hidden > .section__title{
+    .list-hidden > .skill__icon{
         font-size: 4rem;
     }
 }

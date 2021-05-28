@@ -41,7 +41,7 @@ let sectionsInfo = [
         title:"WireFrames",
         icon:"far fa-object-group",
         listElements:[
-            "Prototyping websites"
+            "Prototyping websites with Wireframes"
         ]
     },
     {
@@ -69,10 +69,20 @@ let sectionsInfo = [
         title:"SQL",
         icon:"fas fa-database",
         listElements:[
-            "Setting up a database with adminer",
+            "Setting up a MySQL database",
             "Requesting data",
             "Updating and adding to tables",
-            "Filtering user inputs to sql injections"
+            "Filtering user inputs to prevent sql injections"
+        ]
+    },
+    {
+        title:"Symfony Framework",
+        icon:"fab fa-symfony",
+        listElements:[
+            "Doctrine",
+            "Voters",
+            "Services",
+            "Twig"
         ]
     },
  
