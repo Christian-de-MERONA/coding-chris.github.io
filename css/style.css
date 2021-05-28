@@ -35,10 +35,10 @@ body{
     min-height: 500px;
 }
 
-.header__title{
+/* .header__title{
     font-size: 3rem;
     letter-spacing: 6px;
-}
+} */
 
 .header__title,
 .header__subtitle{
@@ -49,10 +49,9 @@ body{
 }
 
 .header__subtitle{
-    width: 50%;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-    letter-spacing: 2px;
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 2rem;
 }
 
 .navbar{
@@ -69,6 +68,7 @@ body{
 .navbar__item {
     font-size: 1rem;
     color: white;
+    padding-bottom: 1rem;
 }
 
 .navigation__link{
@@ -77,6 +77,14 @@ body{
     text-decoration: none;
 
 }
+
+.sm-links{
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .navigation__link:hover{
     text-decoration: underline;
 }
@@ -103,7 +111,11 @@ body{
 .navbar__item > .fab {
     font-size: 2rem;
     color: white;
-    padding: 0.5rem 2rem;
+    /* padding: 0.5rem 2rem; */
+}
+
+.navigation{
+    visibility: hidden;
 }
 
 /* icon colors*/
@@ -159,7 +171,8 @@ body{
 
 /* main */
 .main {
-    margin: 0 20% 0 20%;
+    margin: auto 5%;
+    max-width: 900px;
 }
 
 .section{
@@ -221,6 +234,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .project-card__title{
@@ -264,7 +278,7 @@ body{
 
 #done-projects__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -280,8 +294,73 @@ body{
     width: auto;
 }
 
-@media (min-width:425px){
-    .list-hidden > .skill__icon{
-        font-size: 4rem;
+@media (min-width:390px){
+    .header__title{
+        width: 80%;
     }
+}
+
+@media (min-width:500px){
+    .navigation{
+        visibility: visible;
+        font-size: 0.9rem;
+    }
+
+    .navigation__link{
+        padding-right: 7px;
+    }
+
+    .sm-links{
+        padding-top: 0;
+    }
+}
+
+@media (min-width:768px){
+    .header__title{
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-top: 4rem;
+    }
+
+    .header__subtitle{
+        width: 50%;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    /* nav bar */
+    .navbar__item > .fab {
+        font-size: 2rem;
+        color: white;
+        padding: 0.5rem 2rem;
+    }
+
+    .sm-links{
+        flex-direction: row;
+    }
+
+    /* main */
+    .main {
+        margin: 0 auto;
+    }
+
+    #done-projects__list{
+        justify-content: space-between;
+    }
+    
+}
+
+@media (min-width:1024px){
+    .header__title{
+        font-size: 3rem;
+        letter-spacing: 6px;
+    }
+
+    .navigation__link{
+        padding-right: 50px;
+        font-size: 1rem;
+    }
+
+
 }
