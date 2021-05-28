@@ -9,22 +9,30 @@
     <title>Coding Chris</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="top">
         <header class="header">
             <h1 class="header__title">Hi ! My name is Christian</h1>
             <p class="header__subtitle">I am a backend web developper specialized in the PHP framework Symfony. </br> 
             Also my preference is for backend I can also code a fullstack website using html, css, and Javascript.
             </p>
             <nav class="navbar">
-                <a href="https://github.com/Christian-de-MERONA/" class="navbar__item" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/christian-de-merona-50802372" class="navbar__item" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/Chris_deMerona" class="navbar__item" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <div class="navigation">
+                    <a href="#my-story" class="navigation__link">My story</a>
+                    <a href="#my-skills" class="navigation__link">My skills</a>
+                    <a href="#done-projects" class="navigation__link">What I've done</a>
+                    <a href="#doing-projects" class="navigation__link">What am I working on</a>
+                </div>
+                <div class="sm-links">
+                    <a href="https://github.com/Christian-de-MERONA/" class="navbar__item" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/christian-de-merona-50802372" class="navbar__item" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Chris_deMerona" class="navbar__item" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
             </nav>
             <img src="images/symfony_project_banner.png" class="header__background-image">
         </header>
         <main class="main">
-            <h2 class="main__header">My trainings</h2>
-            <div class="main__resume">
+            <section id="my-story" class="main__resume section">
+                <h2 class="main__header">My story</h2>
                 <p>
                     I started coding back in 2013 with Microsoft's VBA. Granted some would say that it's not a programming language. However the mechanisms I learned applied very much to what is used in "real" programming languages.
                 </p>
@@ -44,12 +52,40 @@
                 <p>
                     After this success I was decided ! Manipulating web pages was interesting but I thought that making web sites and web application interested me even more. I wanted to pursue a carrier in web developpement and ended up attending the <a href="https://oclock.io/formations/developpeur-web" class="oclock-link">O'clock</a> school Web developper Course.
                 </p>
-            </div>
-            <h2 class="main__header">My skills</h2>
-            <div id="skills">
-
-            </div>
-
+            </section>
+            <section class="main__skills section">
+                <h2 id="my-skills" class="main__header">My skills</h2>
+                <div id="skills">
+    
+                </div>
+            </section>
+            <section class="main__done-projects section">
+                <h2 id="done-projects" class="main__header">What I've done (section in progress)</h2>
+                <div id="done-projects__list">
+                    <div class="project-card">
+                        <h4 class="project-card__title">Blog website</h4>
+                        <img class="project-card__image"  src="images/oplanet-bo.png" alt="">
+                    </div>
+                    <div class="project-card">
+                        <h4 class="project-card__title">Naval battle JS game</h4>
+                        <img class="project-card__image"  src="images/oplanet-bo.png" alt="">
+                    </div>
+                    <div class="project-card">
+                        <h4 class="project-card__title">BackOffice for a site to identify wild dumps</h4>
+                        <img class="project-card__image" src="images/oplanet-bo.png" alt="">
+                    </div>    
+                </div>
+            </section>
+            <section class="main__doing-projects section">
+                <h2 id="doing-projects" class="main__header">What am I working on (section in progress)</h2>
+                <div id="doing-projects__list">
+                    <ul>
+                        <li>Personal finance app</li>
+                        <li>Stock management app</li>
+                        <li>Recipe app</li>
+                    </ul>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div>
@@ -61,6 +97,9 @@
             </div>
 
         </footer>
+        <div class="back-to-top">
+            <a href="#top"><i class="fas fa-arrow-alt-circle-up back-to-top__icon"></i></a>
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/77352397fb.js" crossorigin="anonymous"></script>
     <script src="script/sections.js"></script>

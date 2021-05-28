@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    position: relative;
+}
+
 .header {
     background-color: black;
     width: 100%;
@@ -54,12 +58,27 @@
 .navbar{
     position: absolute;
     top: 10px;
-    right: 10px;
+    width: 100%;
+    padding: 0 5%;
+    /* right: 10px; */
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar__item {
     font-size: 1rem;
     color: white;
+}
+
+.navigation__link{
+    color: white;
+    padding-right: 30px;
+    text-decoration: none;
+
+}
+.navigation__link:hover{
+    text-decoration: underline;
 }
 
 /* .fa-github-square {
@@ -143,6 +162,10 @@
     margin: 0 20% 0 20%;
 }
 
+.section{
+    padding-bottom: 2rem;
+}
+
 .skill{
     height: 250px;
     width: 100%;
@@ -192,6 +215,31 @@
     margin-left: 3rem;
 }
 
+.project-card{
+    width: 200px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card__title{
+    height: 20%;
+}
+.project-card__image{
+    width: 100%;
+}
+
+.back-to-top__icon{
+    position: fixed;
+    color: darkgray;
+    font-size: 4rem;
+    right: 20px;
+    bottom: 20px;
+
+}
+
 .footer {
     background-color: black;
     color: white;
@@ -207,22 +255,20 @@
     font-size: 1.1rem;
 }
 
-/* .list-hidden > .skill__list{
-    opacity: 0;
-    padding-bottom: 200px;
-}
-
-.list-hidden > .skill__icon{
-    top: 100px;
-    font-size: 3rem;
-} */
-
 .footer__authors-attributes{
     font-size: x-small;
 }
 
 .footer__link {
     color: white;
+}
+
+#done-projects__list,
+#doing-projects__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @media (min-width:425px){

@@ -82,7 +82,9 @@ let sectionsInfo = [
             "Doctrine",
             "Voters",
             "Services",
-            "Twig"
+            "Twig",
+            "Symfony/UX",
+            "ChartsJS"
         ]
     },
  
