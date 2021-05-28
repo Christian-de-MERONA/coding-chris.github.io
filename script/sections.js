@@ -1,6 +1,7 @@
 let sectionsInfo = [
     {
         title:"HTML",
+        icon:"fab fa-html5",
         listElements:[
             "Semantics",
             "File links",
@@ -9,6 +10,7 @@ let sectionsInfo = [
     },
     {
         title:"CSS",
+        icon:"fab fa-css3-alt",
         listElements:[
             "Responsiveness",
             "Aiming classes",
@@ -17,7 +19,16 @@ let sectionsInfo = [
         ]
     },
     {
+        title:"Javascript",
+        icon:"fab fa-js-square",
+        listElements:[
+            "User interactions",
+            "Site animations",
+        ]
+    },
+    {
         title:"Git & Github",
+        icon:"fab fa-github",
         listElements:[
             "Creating a repository",
             "Cloning an existing repository",
@@ -28,18 +39,21 @@ let sectionsInfo = [
     },
     {
         title:"WireFrames",
+        icon:"far fa-object-group",
         listElements:[
-            "Prototyping websites"
+            "Prototyping websites with Wireframes"
         ]
     },
     {
         title:"BootStrap",
+        icon:"fab fa-bootstrap",
         listElements:[
             "Quick setup of site with basic stylings"
         ]
     },
     {
         title:"PHP",
+        icon:"fab fa-php",
         listElements:[
             "Loops",
             "Functions",
@@ -53,11 +67,24 @@ let sectionsInfo = [
     },
     {
         title:"SQL",
+        icon:"fas fa-database",
         listElements:[
-            "Setting up a database with adminer",
+            "Setting up a MySQL database",
             "Requesting data",
             "Updating and adding to tables",
-            "Filtering user inputs to sql injections"
+            "Filtering user inputs to prevent sql injections"
+        ]
+    },
+    {
+        title:"Symfony Framework",
+        icon:"fab fa-symfony",
+        listElements:[
+            "Doctrine",
+            "Voters",
+            "Services",
+            "Twig",
+            "Symfony/UX",
+            "ChartsJS"
         ]
     },
  

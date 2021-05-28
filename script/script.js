@@ -2,34 +2,35 @@ let app = {
     init: function(){
         app.addSectionsToDOM();
 
-    },
-    showList:function(evt){
-        const mouseoverElement = evt.target;
-        mouseoverElement.closest(".section").classList.remove("list-hidden");
-    },
-    hideList:function(evt){
-        const mouseoverElement = evt.target;
-        mouseoverElement.closest(".section").classList.add("list-hidden");
+    // },
+    // showList:function(evt){
+    //     const mouseoverElement = evt.target;
+    //     mouseoverElement.closest(".section").classList.remove("list-hidden");
+    // },
+    // hideList:function(evt){
+    //     const mouseoverElement = evt.target;
+    //     mouseoverElement.closest(".section").classList.add("list-hidden");
 
     },
     addSectionsToDOM:function(){
         // get sections div
-        const sectionsBlock = document.querySelector("#sections");
+        const sectionsBlock = document.querySelector("#skills");
 
         // for each section info
         for (section of sectionsInfo){
             // get section template
-            let sectionTemplate = document.querySelector("#section-template");
+            let sectionTemplate = document.querySelector("#skills-template");
             
             // clone template
             let newSection = sectionTemplate.content.cloneNode(true);
 
             // get title element of section template
-            let sectionTitle = newSection.querySelector(".section__title");
+            let sectionTitle = newSection.querySelector(".skill__icon");
+            
+            sectionTitle.innerHTML = '<i class="' + section.icon + ' inline-fab"></i>';
 
             // get list element of section template
-            let sectionList = newSection.querySelector(".section__list");
-            sectionTitle.textContent = section.title;
+            let sectionList = newSection.querySelector(".skill__list");
 
             //  for each element in listElements
             for (listItem of section.listElements){
@@ -60,16 +61,16 @@ let app = {
         app.addAllListeners();
 
 
-    },
-    addAllListeners:function(){
-        // get all sections 
-        let sectionList = document.querySelectorAll('.section');
+    // },
+    // addAllListeners:function(){
+    //     // get all sections 
+    //     let sectionList = document.querySelectorAll('.section');
 
-        // add listeners to each section
-        for (section of sectionList){
-            section.addEventListener("mouseover", app.showList);
-            section.addEventListener("mouseleave", app.hideList);
-        }
+    //     // add listeners to each section
+    //     for (section of sectionList){
+    //         section.addEventListener("mouseover", app.showList);
+    //         section.addEventListener("mouseleave", app.hideList);
+    //     }
     }
 
     
