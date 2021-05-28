@@ -262,12 +262,22 @@ body{
     color: white;
 }
 
-#done-projects__list,
-#doing-projects__list{
+#done-projects__list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#doing-projects__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.doing-projects__list-item{
+    width: auto;
 }
 
 @media (min-width:425px){
