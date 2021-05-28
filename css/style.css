@@ -5,6 +5,73 @@
     font-family: 'Manrope', sans-serif;
 }
 
+.header {
+    background-color: black;
+    width: 100%;
+    padding: 0.5rem;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header__background-image{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.header__title,
+.header__subtitle{
+    color: white;
+    text-shadow: 0 0 2px black, 0 0 2px black;
+    padding-bottom: 5rem;
+}
+
+.header__subtitle{
+    width: 50%;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.navbar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.navbar__item {
+    font-size: 1rem;
+    color: white;
+}
+
+/* .fa-github-square {
+    size: 5rem;
+    color: blue;
+} */
+
+.header {
+    padding: 5% 0 0 5% ;
+}
+
+
+.oclock-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.oclock-link:hover {
+    text-decoration: underline;
+}
+
 
 /* nav bar */
 .navbar__item > .fab {
@@ -51,13 +118,6 @@
     flex-wrap: wrap;
 }
 
-/* header */
-.header {
-    padding: 0.5rem;
-
-}
-
-
 .inline-fab {
     padding: 0;
     font-size: 5rem;
@@ -71,20 +131,7 @@
     font-size: 7rem;
 }
 
-.header__title,
-.navbar {
-    text-align: center;
-}
 
-.oclock-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-.oclock-link:hover {
-    text-decoration: underline;
-}
 
 /* main */
 .main {
@@ -140,8 +187,8 @@
     margin-left: 3rem;
 }
 
-/* footer */
-.header,
+
+
 .footer {
     background-color: black;
     color: white;
