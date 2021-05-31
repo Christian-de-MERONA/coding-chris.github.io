@@ -150,10 +150,50 @@ body{
 
 /* container */
 #skills {
+    width: 1500px;
+    height: 200px ;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
+
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-btn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3rem;
+
+    padding: 0 2rem;
+    margin: 0 2px;
+    text-decoration: none;
+    border: 1px solid black;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.before:active {
+    transition: all 0.1s ease-in-out;
+    transform: translateX(-10px);
+}
+.after:active {
+    transition: all 0.1s ease-in-out;
+    transform: translateX(10px);
 }
 
 .inline-fab {
@@ -165,8 +205,13 @@ body{
     font-size: 1.2rem;
 }
 
-.skill__icon > .inline-fab{
-    font-size: 7rem;
+/* .skill__icon > .inline-fab{
+
+    height: 200px;
+} */
+
+.skill__icon{
+    width: 100px;
 }
 
 
@@ -181,28 +226,48 @@ body{
 }
 
 .skill{
-    width: 100%;
-    display: flex;
+    width: 1000px;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     margin: 1rem 0;
     padding: 1rem;
     position: relative;
+
+    transition: all 0.3s ease-in-out;
+
+    overflow: hidden;
 }
 
-.skill:nth-child(2n){
+/* .skill:nth-child(2n){
     flex-direction: row-reverse;
-}
+} */
 
 
 .skill__icon,
 .skill__list {
-    width: 50%;
-    text-align: center;
+    /* width: 50%;
+    text-align: center; */
 }
 
 .skill__list{
     list-style: none;
+    /* display: none; */
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    transform: translateX(-300px);
+    transition: all 0.3s ease-in-out;
+}
+
+.skill:hover > .skill__list{
+    /* display: block; */
+    transform: translateX(80px);
+}
+
+.skill:hover{
+    width: 3000px;
+    
 }
 
 .main__header {
