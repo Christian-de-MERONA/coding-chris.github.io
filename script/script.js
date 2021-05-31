@@ -52,11 +52,19 @@ let app = {
 
     },
     handleScroll: function(e){
+
+        console.log(window.pageYOffset);
+        
+        let backToTopBtn = document.querySelector("#back-to-top");
         // make "go to top" button appear
         if(window.pageYOffset >= 300){
-            let backToTopBtn = document.querySelector("#back-to-top");
-
-            backToTopBtn.classList.add("hidden");
+            if(backToTopBtn.classList.contains("hidden")){
+                backToTopBtn.classList.remove("hidden");
+            }
+        } else {
+            if(!backToTopBtn.classList.contains("hidden")){
+                backToTopBtn.classList.add("hidden");
+            }
         }
     }
 

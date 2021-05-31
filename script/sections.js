@@ -3,19 +3,19 @@ let sectionsInfo = [
         title:"HTML",
         icon:"fab fa-html5",
         listElements:[
-            "Semantics",
-            "File links",
-            "Use of 3rd party elements like fonts"
+            "Building a semantic website",
+            "Structuring the page's content",
+            "Use of 3rd party elements with cdn"
         ]
     },
     {
         title:"CSS",
         icon:"fab fa-css3-alt",
         listElements:[
+            "Styling of web pages",
             "Responsiveness",
-            "Aiming classes",
-            "Styling",
-            "Positioning"
+            "BEM classes",
+            "Element positioning"
         ]
     },
     {
@@ -24,6 +24,7 @@ let sectionsInfo = [
         listElements:[
             "User interactions",
             "Site animations",
+            "(this list of skills is populated with JS)"
         ]
     },
     {
@@ -41,27 +42,24 @@ let sectionsInfo = [
         title:"WireFrames",
         icon:"far fa-object-group",
         listElements:[
-            "Prototyping websites with Wireframes"
+            "Prototyping websites with Wireframes using Whimsical"
         ]
     },
     {
         title:"BootStrap",
         icon:"fab fa-bootstrap",
         listElements:[
-            "Quick setup of site with basic stylings"
+            "Quick setup of sites with Boostrap for POC"
         ]
     },
     {
         title:"PHP",
         icon:"fab fa-php",
         listElements:[
-            "Loops",
-            "Functions",
-            "Dynamically building pages",
-            "Classes",
-            "Objects",
-            "MVC",
-            "Handling GET and POST requests with Altrorouter",
+            "Building pages dynamically",
+            "Object Oriented Programming",
+            "Structuring an MVC project",
+            "Handling HTTP requests",
             "Following Psr4 standards"
         ]
     },
@@ -70,9 +68,8 @@ let sectionsInfo = [
         icon:"fas fa-database",
         listElements:[
             "Setting up a MySQL database",
-            "Requesting data",
-            "Updating and adding to tables",
-            "Filtering user inputs to prevent sql injections"
+            "Requesting / sending data and tables",
+            "Managing the database using adminer / Phpmyadmin"
         ]
     },
     {
@@ -84,7 +81,8 @@ let sectionsInfo = [
             "Services",
             "Twig",
             "Symfony/UX",
-            "ChartsJS"
+            "ChartsJS",
+            "Faker Fixtures"
         ]
     },
  
