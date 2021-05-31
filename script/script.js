@@ -2,14 +2,7 @@ let app = {
     init: function(){
         app.addSectionsToDOM();
 
-    // },
-    // showList:function(evt){
-    //     const mouseoverElement = evt.target;
-    //     mouseoverElement.closest(".section").classList.remove("list-hidden");
-    // },
-    // hideList:function(evt){
-    //     const mouseoverElement = evt.target;
-    //     mouseoverElement.closest(".section").classList.add("list-hidden");
+        document.addEventListener("scroll", app.handleScroll);
 
     },
     addSectionsToDOM:function(){
@@ -57,20 +50,14 @@ let app = {
             sectionsBlock.appendChild(newSection);
         }
 
-        // call listener function to add listeners to all sections
-        app.addAllListeners();
+    },
+    handleScroll: function(e){
+        // make "go to top" button appear
+        if(window.pageYOffset >= 300){
+            let backToTopBtn = document.querySelector("#back-to-top");
 
-
-    // },
-    // addAllListeners:function(){
-    //     // get all sections 
-    //     let sectionList = document.querySelectorAll('.section');
-
-    //     // add listeners to each section
-    //     for (section of sectionList){
-    //         section.addEventListener("mouseover", app.showList);
-    //         section.addEventListener("mouseleave", app.hideList);
-    //     }
+            backToTopBtn.classList.add("hidden");
+        }
     }
 
     
