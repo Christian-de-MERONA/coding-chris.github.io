@@ -43,16 +43,36 @@ body{
 
 .header__title,
 .header__subtitle{
-    color: white;
     text-shadow: 0 0 2px black, 0 0 2px black;
+}
+
+.header__title,
+.header__subtitle,
+.header__action{
+    color: white;
     padding-bottom: 5rem;
-    padding-left: 5%;
+    margin-left: 5%;
 }
 
 .header__subtitle{
-    width: 100%;
     font-size: 1.1rem;
     line-height: 2rem;
+}
+
+.header__action{
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__action:active{
+    background-color: white;
+    border-color: black;
+    color: black;
 }
 
 .navbar{
@@ -326,7 +346,7 @@ MEDIA QUERIES
     }
 
     .header__subtitle{
-        width: 50%;
+        width: 70%;
         font-size: 1.3rem;
         line-height: 2.5rem;
         letter-spacing: 2px;
