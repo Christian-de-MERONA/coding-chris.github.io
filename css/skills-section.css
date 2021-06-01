@@ -1,0 +1,78 @@
+#skills {
+    display: flex;
+    /* width: fit-content; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* icon colors*/
+.skill__icon>.fa-html5 {
+    color: blue;
+}
+
+.skill__icon>.fa-css3-alt {
+    color: red;
+
+}
+
+.skill__icon>.fa-github,
+.skill__icon>.fa-object-group {
+    color: black;
+}
+
+.skill__icon>.fa-bootstrap {
+    color: rgb(70, 0, 128);
+}
+
+.skill__icon>.fa-php {
+    color: rgb(151, 73, 151);
+    font-weight: bold;
+}
+
+.skill__icon>.fa-database {
+    color: grey;
+}
+
+.skill__icon>.fa-js-square {
+    color: rgb(238, 220, 61);
+}
+
+.skill__icon>.inline-fab {
+    font-size: 4rem;
+}
+
+.skill__list{
+    width: 200px;
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    transform: translateX(-300px);
+    transition: all 0.3s ease-in-out;
+}
+
+.skill__icon{
+    width: 100%;
+}
+
+/* .skill:hover > .skill__list{
+    transform: translateX(80px);
+}
+*/
+
+
+.skill{
+    width: 100px;
+    /* height: 300px; */
+    margin: 1rem 0;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+@media (min-width:768px){
+    .skill:hover{
+        transform: scale(1.2);
+    } 
+}
