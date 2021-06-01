@@ -165,7 +165,7 @@ body{
     width: fit-content;
 }
 
-/* .pagination{
+.pagination{
     display: flex;
     justify-content: center;
 } 
@@ -191,17 +191,16 @@ body{
     cursor: pointer;
 }
 
-.before:active {
+.left:active {
     transition: all 0.1s ease-in-out;
     transform: translateX(-10px);
 }
-.after:active {
+.right:active {
     transition: all 0.1s ease-in-out;
     transform: translateX(10px);
-} */
+} 
 
 /* .inline-fab {
-    /* padding: 0; */
     font-size: 5rem;
 } */
 
@@ -250,17 +249,14 @@ body{
     width: 100%;
 }
 
-.skill:hover > .skill__list{
-    /* display: block; */
+/* .skill:hover > .skill__list{
     transform: translateX(80px);
 }
-
-
 
 .skill:hover{
     width: 300px;
     transition: all 0.3s ease-in-out;
-}
+} */
 
 .main__header {
     text-align: center;
