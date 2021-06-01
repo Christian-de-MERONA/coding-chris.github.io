@@ -4,12 +4,6 @@ let app = {
 
         document.addEventListener("scroll", app.handleScroll);
 
-        let paginationBtnLeft = document.querySelector(".left");
-        let paginationBtnRight = document.querySelector(".right");
-
-        paginationBtnLeft.addEventListener("click", app.changeOrder);
-        paginationBtnRight.addEventListener("click", app.changeOrder);
-
     },
     addSectionsToDOM:function(){
         // get sections div
@@ -28,9 +22,12 @@ let app = {
             let newSection = sectionTemplate.content.cloneNode(true);
 
             // get title element of section template
-            let sectionTitle = newSection.querySelector(".skill__icon");
-            
-            sectionTitle.innerHTML = '<i class="' + section.icon + ' inline-fab"></i>';
+            let skillName = newSection.querySelector(".skill__name");
+            skillName.textContent = section.title;
+
+            // get title element of section template
+            let sectionIcon = newSection.querySelector(".skill__icon");
+            sectionIcon.innerHTML = '<i class="' + section.icon + ' inline-fab"></i>';
 
             // // get list element of section template
             // let sectionList = newSection.querySelector(".skill__list");

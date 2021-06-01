@@ -64,7 +64,7 @@ let sectionsInfo = [
         ]
     },
     {
-        title:"SQL",
+        title:"MySQL",
         icon:"fas fa-database",
         listElements:[
             "Setting up a MySQL database",
@@ -73,7 +73,7 @@ let sectionsInfo = [
         ]
     },
     {
-        title:"Symfony Framework",
+        title:"Symfony",
         icon:"fab fa-symfony",
         listElements:[
             "Doctrine",
