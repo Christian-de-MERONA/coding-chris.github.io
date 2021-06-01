@@ -305,6 +305,7 @@ MEDIA QUERIES
 }
 
 @media (min-width:500px){
+
     .navigation{
         visibility: visible;
         font-size: 0.9rem;
@@ -347,6 +348,7 @@ MEDIA QUERIES
     /* main */
     .main {
         margin: 0 auto;
+        padding: 0 5%;
     }
 
     #done-projects__list{
