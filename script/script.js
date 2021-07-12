@@ -1,63 +1,34 @@
 let app = {
     init: function(){
-        app.addSectionsToDOM();
+        app.addSkillsToDOM();
 
         document.addEventListener("scroll", app.handleScroll);
 
     },
-    addSectionsToDOM:function(){
-        // get sections div
-        const sectionsBlock = document.querySelector("#skills");
+    addSkillsToDOM:function(){
+        // get skills div
+        const skillsBlock = document.querySelector("#skills");
 
-        
+        // for each skill info
+        for (skill of skills){
 
-        // for each section info
-        for (section of sectionsInfo){
-
-            
-            // get section template
-            let sectionTemplate = document.querySelector("#skills-template");
+            // get skill template
+            let skillTemplate = document.querySelector("#skills-template");
             
             // clone template
-            let newSection = sectionTemplate.content.cloneNode(true);
+            let newskill = skillTemplate.content.cloneNode(true);
 
-            // get title element of section template
-            let skillName = newSection.querySelector(".skill__name");
-            skillName.textContent = section.title;
+            // get title element of skill template
+            let skillName = newskill.querySelector(".skill__name");
+            skillName.textContent = skill.title;
 
-            // get title element of section template
-            let sectionIcon = newSection.querySelector(".skill__icon");
-            sectionIcon.innerHTML = '<i class="' + section.icon + ' inline-fab"></i>';
+            // get title element of skill template
+            let skillIcon = newskill.querySelector(".skill__icon");
+            skillIcon.innerHTML = '<i class="' + skill.icon + ' inline-fab"></i>';
 
-            // // get list element of section template
-            // let sectionList = newSection.querySelector(".skill__list");
-
-            // //  for each element in listElements
-            // for (listItem of section.listElements){
-            //     // create li element
-            //     let sectionListItem = document.createElement("li");
-
-            //     // add text to li element
-            //     sectionListItem.innerText = listItem;
-
-            //     // add li element to section list element
-            //     sectionList.appendChild(sectionListItem);
-            // }
-
-            // // create last list element
-            // let sectionListItem = document.createElement("li");
-
-            // //  add text to last list element
-            // sectionListItem.innerText = "...";
-
-            // // add li element to section list element
-            // sectionList.appendChild(sectionListItem);
-
-            // add new section to sections element
-            sectionsBlock.appendChild(newSection);
+            // add new skill to skills element
+            skillsBlock.appendChild(newskill);
         }
-
-        // app.addOrder();
     },
     addOrder: function(){
         let skillItems = document.querySelectorAll(".skill");
