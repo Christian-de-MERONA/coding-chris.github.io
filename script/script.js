@@ -2,6 +2,8 @@ let app = {
     init: function(){
         app.addSkillsToDOM();
 
+        app.addProjectsToDOM();
+
         document.addEventListener("scroll", app.handleScroll);
 
     },
@@ -29,6 +31,27 @@ let app = {
             // add new skill to skills element
             skillsBlock.appendChild(newskill);
         }
+    },
+    addProjectsToDOM:function(){
+        const projetsSection = document.querySelector("#projects");
+
+        // console.log(projetsSection);
+
+        for (project of projects){
+
+            // get template for projects
+            let projetTemplate = document.querySelector("#projects-template");
+            
+            let newProjet = projetTemplate.content.cloneNode(true);
+            
+            newProjet.querySelector(".project-card__title").textContent = project.name;
+            newProjet.querySelector(".project-card__description").textContent = project.description;
+            newProjet.querySelector(".illustration__image").src = project.picture.big;
+            newProjet.querySelector(".illustration__image").title = project.name;
+            
+            projetsSection.appendChild(newProjet);
+        }
+
     },
     addOrder: function(){
         let skillItems = document.querySelectorAll(".skill");

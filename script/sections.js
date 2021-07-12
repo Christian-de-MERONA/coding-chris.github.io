@@ -1,4 +1,4 @@
-let sectionsInfo = [
+let skills = [
     {
         title:"HTML",
         icon:"fab fa-html5",
@@ -87,5 +87,71 @@ let sectionsInfo = [
     },
  
  
+];
+
+let projects = [
+    {
+        name:"Todo list",
+        description:"A list of things to do stored in local storage",
+        stack:[
+            "HTML",
+            "CSS",
+            "Javascript",
+        ],
+        picture:{
+            small:"",
+            big:"images/todolist_desktop.png"
+        },
+        video:""
+    },
+    {
+        name:"Naval battle game",
+        description:"A naval battle game in javascript",
+        stack:[
+            "HTML",
+            "CSS",
+            "Javascript",
+        ],
+        picture:{
+            small:"",
+            big:"images/Bataille Navale.png"
+        },
+        video:""
+    },
+    {
+        name:"O'planet",
+        description:"A site to identify wild dumps and plan removals to clean up the area",
+        stack:[
+            "HTML",
+            "CSS",
+            "Javascript",
+            "PHP",
+            "Symfony",
+            "MySQL",
+            "Bootstrap",
+            "ChartJS",            
+        ],
+        picture:{
+            small:"",
+            big:"images/oplanet-bo.png"
+        },
+        video:""
+    },
+    {
+        name:"GOT cast presentation",
+        description:"A site to show the characters of the Game of Thrones series and their associative houses",
+        stack:[
+            "HTML",
+            "CSS",
+            "Javascript",
+            "PHP",
+            "Lumens",           
+        ],
+        picture:{
+            small:"",
+            big:"images/GOT.png"
+        },
+        video:""
+    }
 ]
 

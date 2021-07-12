@@ -1,0 +1,34 @@
+.project-card__image{
+    cursor: pointer;
+}
+
+.project-card{
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+}
+
+.project-card__text,
+.project-card__illustration{
+    width: 50%;
+
+}
+
+.project-card__text{
+    padding-right: 1rem;
+}
+
+.project-card__title{
+    margin-bottom: 2rem;
+}
+
+
+.illustration__image{
+    max-width: 100%;
+}

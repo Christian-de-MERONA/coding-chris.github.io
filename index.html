@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skills-section.css">
+    <link rel="stylesheet" href="css/projects-section.css">
     <link rel="shortcut icon" href="icons/coding.png" type="image/x-icon">
     <title>Coding Chris</title>
 </head>
@@ -61,28 +62,12 @@
                 <h2 id="my-skills" class="main__header">My skills</h2>
                 <div id="skills">
                 </div>
-
             </section>
             <hr>
             <section class="main__done-projects main__section">
                 <h2 id="done-projects" class="main__header">A few things I've done</h2>
-                <div id="done-projects__list">
-                    <div class="project-card">
-                        <h4 class="project-card__title">Todo list</h4>
-                        <a href="images/TodoList.png"><img class="project-card__image"  src="images/TodoList.png" alt="todo list"></a>
-                    </div>
-                    <div class="project-card">
-                        <h4 class="project-card__title">Naval battle JS game</h4>
-                        <a href="images/Bataille Navale.png"><img class="project-card__image"  src="images/Bataille Navale.png" alt="Naval battle game"></a>
-                    </div>
-                    <div class="project-card">
-                        <h4 class="project-card__title">BackOffice for a site to identify wild dumps</h4>
-                        <a href="images/oplanet-bo.png"><img class="project-card__image" src="images/oplanet-bo.png" alt="O'planet backoffice"></a>
-                    </div>    
+                <div id="projects">
                 </div>
-                <!-- <div class="pagination">
-                    <a class="pagination-btn left">&lt;</a><a class="pagination-btn right">&gt;</a>
-                </div> -->
             </section>
             <hr>
             <section class="main__doing-projects main__section">
@@ -119,5 +104,19 @@
         <div class="skill__name"></div>
         <div class="skill__icon"></div>
     </section>
+</template>
+<template id="projects-template">
+    <div id="done-projects__list">
+        <div class="project-card">
+            <div class="project-card__text">
+                <h4 class="project-card__title"></h4>
+                <p class="project-card__description">
+                </p>
+            </div>
+            <div class="project-card__illustration">
+                <img class="illustration__image">
+            </div>
+        </div>
+    </div>
 </template>
 </html>

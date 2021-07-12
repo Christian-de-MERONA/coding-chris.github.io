@@ -233,22 +233,6 @@ body{
     margin-left: 3rem;
 }
 
-.project-card{
-    width: 200px;
-    height: 150px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-.project-card__title{
-    height: 20%;
-}
-.project-card__image{
-    width: 100%;
-}
 
 .back-to-top__icon{
     position: fixed;
