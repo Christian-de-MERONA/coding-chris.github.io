@@ -95,26 +95,60 @@
             <a href="#top"><i class="fas fa-arrow-alt-circle-up back-to-top__icon"></i></a>
         </div>
     </div>
+    <template id="skills-template">
+        <section class="skill">
+            <div class="skill__name"></div>
+            <div class="skill__icon"></div>
+        </section>
+    </template>
+    <template id="projects-template">
+            <div class="project-card">
+                <div class="project-card__text">
+                    <h4 class="project-card__title"></h4>
+                    <p class="project-card__description">
+                    </p>
+                </div>
+                <div class="project-card__illustration">
+                    <img class="illustration__image">
+                </div>
+            </div>
+    </template>
+    <div class="modale" style="
+    position: fixed;
+    background-color: #0000009c;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+">
+        <img style="width:80vw;height:auto;" src="images/oplanet-bo.png" alt="">
+        <div style="
+        width:3rem;
+        height:3rem;
+        background:grey;
+        border-radius:50%;
+        position:absolute;
+        top:2rem;
+        right:3rem;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        cursor:pointer;
+        border:2px solid white;
+        color:white;
+        font-weight:bold;
+        font-size: 2rem;
+        "
+        >X</div>
+    </div>
+
     <script src="https://kit.fontawesome.com/77352397fb.js" crossorigin="anonymous"></script>
     <script src="script/sections.js"></script>
     <script src="script/script.js"></script>
 </body>
-<template id="skills-template">
-    <section class="skill">
-        <div class="skill__name"></div>
-        <div class="skill__icon"></div>
-    </section>
-</template>
-<template id="projects-template">
-        <div class="project-card">
-            <div class="project-card__text">
-                <h4 class="project-card__title"></h4>
-                <p class="project-card__description">
-                </p>
-            </div>
-            <div class="project-card__illustration">
-                <img class="illustration__image">
-            </div>
-        </div>
-</template>
+
 </html>
