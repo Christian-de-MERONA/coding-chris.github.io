@@ -20,11 +20,11 @@
 
 /* icon colors*/
 .skill__icon > .fa-html5 {
-    color: blue;
+    color: #E54D26;
 }
 
 .skill__icon > .fa-css3-alt {
-    color: red;
+    color: #1B73BA;
 
 }
 
@@ -34,7 +34,7 @@
 }
 
 .skill__icon > .fa-bootstrap {
-    color: rgb(70, 0, 128);
+    color: #5A3F82;
 }
 
 .skill__icon > .fa-php {
@@ -47,12 +47,18 @@
 }
 
 .skill__icon > .fa-js-square {
-    color: rgb(238, 220, 61);
+    color: #E9CA32;
+}
+
+.skill__icon > .fa-python {
+    color: #3776AA;
 }
 
 .skill__icon > .inline-fab {
     font-size: 4rem;
 }
+
+
 
 .skill__icon{
     width: 100%;
