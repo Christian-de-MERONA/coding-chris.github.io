@@ -6,6 +6,8 @@ let app = {
 
         document.addEventListener("scroll", app.handleScroll);
 
+        // document.addEventListener("click", app.insertModale);
+
     },
     addSkillsToDOM:function(){
         // get skills div
@@ -48,6 +50,7 @@ let app = {
             newProjet.querySelector(".project-card__description").textContent = project.description;
             newProjet.querySelector(".illustration__image").src = project.picture.big;
             newProjet.querySelector(".illustration__image").title = project.name;
+            newProjet.querySelector(".illustration__image").addEventListener("click", app.insertModale);
             
             projetsSection.appendChild(newProjet);
         }
@@ -77,34 +80,28 @@ let app = {
             }
         }
     },
-    changeOrder: function(e){
+    insertModale: function(e){
 
-        let btnClicked = e.currentTarget;
+        let projectImage = e.target.src;
+        let projectTitle = e.target.title;
 
-        let skills = document.querySelector("#skills");
-        let newSkillElement;
-        if(btnClicked.classList.contains("right")){
-            console.log("right btn clicked");
-            let firstSkill = skills.firstElementChild;
-            newSkillElement = firstSkill.cloneNode(true);
-            skills.removeChild(firstSkill);
-            skills.appendChild(newSkillElement);
-        } 
+        // insert modale on page
+        let body = document.querySelector(".container");
 
+        let modaleWindow = document.createElement("div");
+        modaleWindow.classList.add("modale");
 
-        if(btnClicked.classList.contains("left")) {
-            let lastSkill = skills.lastElementChild;
-            newSkillElement = lastSkill.cloneNode(true);
-            skills.removeChild(lastSkill);
-            skills.insertBefore(newSkillElement, skills.firstElementChild);
-            
-        }
+        let htmlString = '<img class="modale__image" src="' + projectImage + '" alt="' + projectTitle + '"><div class="modale-close"></div>';
 
+        modaleWindow.innerHTML = htmlString;
 
-        
+        modaleWindow.querySelector(".modale-close").addEventListener("click", function(){
+            body.removeChild(document.querySelector(".modale"));
+        })
+
+        body.appendChild(modaleWindow);
 
     }
-
     
 };
 

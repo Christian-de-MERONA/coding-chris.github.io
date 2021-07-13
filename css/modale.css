@@ -1,0 +1,39 @@
+.modale{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+
+.modale-close{
+    width:3rem;
+    height:3rem;
+    background:grey;
+    border-radius:50%;
+    position:absolute;
+    top:2rem;
+    right:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    border:2px solid white;
+    color:white;
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+.modale__image{
+    height:80vh;
+    width:auto;
+}
+
+.modale-close::after{
+    content:"X";
+}
