@@ -85,11 +85,39 @@ let skills = [
             "Faker Fixtures"
         ]
     },
+    {
+        title:"Python",
+        icon:"fab fa-python",
+        listElements:[
+            "Selenium",
+            "Panda",
+            "NumPy",
+        ]
+    },
  
  
 ];
 
 let projects = [
+    {
+        name:"O'planet",
+        description:"A site to identify wild dumps and plan removals to clean up the area",
+        stack:[
+            "HTML",
+            "CSS",
+            "Javascript",
+            "PHP",
+            "Symfony",
+            "MySQL",
+            "Bootstrap",
+            "ChartJS",            
+        ],
+        picture:{
+            small:"",
+            big:"images/oplanet-bo.png"
+        },
+        video:""
+    },
     {
         name:"Todo list",
         description:"A list of things to do stored in local storage",
@@ -115,25 +143,6 @@ let projects = [
         picture:{
             small:"",
             big:"images/Bataille Navale.png"
-        },
-        video:""
-    },
-    {
-        name:"O'planet",
-        description:"A site to identify wild dumps and plan removals to clean up the area",
-        stack:[
-            "HTML",
-            "CSS",
-            "Javascript",
-            "PHP",
-            "Symfony",
-            "MySQL",
-            "Bootstrap",
-            "ChartJS",            
-        ],
-        picture:{
-            small:"",
-            big:"images/oplanet-bo.png"
         },
         video:""
     },
