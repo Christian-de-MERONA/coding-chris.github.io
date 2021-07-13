@@ -50,7 +50,7 @@ let app = {
             newProjet.querySelector(".project-card__description").textContent = project.description;
             newProjet.querySelector(".illustration__image").src = project.picture.big;
             newProjet.querySelector(".illustration__image").title = project.name;
-            newProjet.querySelector(".illustration__image").addEventListener("click", app.insertModale);
+            newProjet.querySelector(".illustration__enlarge").addEventListener("click", app.insertModale);
             
             projetsSection.appendChild(newProjet);
         }
@@ -82,10 +82,10 @@ let app = {
     },
     insertModale: function(e){
 
-        let projectImage = e.target.src;
-        let projectTitle = e.target.title;
+        // insert a modale on the page when clicked on project image
+        let projectImage = e.target.parentElement.querySelector(".illustration__image").src;
+        let projectTitle = e.target.parentElement.querySelector(".illustration__image").title;
 
-        // insert modale on page
         let body = document.querySelector(".container");
 
         let modaleWindow = document.createElement("div");

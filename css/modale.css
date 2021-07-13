@@ -1,8 +1,8 @@
 .modale{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.493);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     display: flex;
@@ -14,7 +14,7 @@
 .modale-close{
     width:3rem;
     height:3rem;
-    background:grey;
+    background:white;
     border-radius:50%;
     position:absolute;
     top:2rem;
@@ -23,17 +23,49 @@
     justify-content:center;
     align-items:center;
     cursor:pointer;
-    border:2px solid white;
-    color:white;
+    border:2px solid grey;
+    color:grey;
     font-weight:bold;
     font-size: 2rem;
 }
 
 .modale__image{
-    height:80vh;
-    width:auto;
+    height:auto;
+    width:90vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modale-close::after{
     content:"X";
+}
+
+
+/*
+MEDIA QUERIES
+
+*/
+
+@media (min-width:390px){
+ 
+}
+
+@media (min-width:500px){
+
+ }
+
+@media (min-width:768px){
+   
+    
+}
+
+@media (min-width:1024px){
+    .modale__image{
+        max-height:80vh;
+        width: auto;
+        /* max-width:90vw; */
+    }
+
 }
