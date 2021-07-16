@@ -8,6 +8,8 @@ let app = {
 
         // document.addEventListener("click", app.insertModale);
 
+        document.querySelector(".navigation__burger").addEventListener("click", app.handleMenu);
+
     },
     addSkillsToDOM:function(){
         // get skills div
@@ -101,6 +103,9 @@ let app = {
 
         body.appendChild(modaleWindow);
 
+    },
+    handleMenu: function(e){
+        document.querySelector(".navbar").classList.toggle("burger-menu-open");
     }
     
 };
