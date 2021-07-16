@@ -15,7 +15,7 @@ body{
     background-color: black;
     width: 100%;
     height: 500px;
-    padding-top: 5rem;
+    padding-top: 2rem;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -48,6 +48,10 @@ body{
     color: white;
     padding-bottom: 5rem;
     margin: 0 1rem;
+}
+
+.header__title {
+    width: 70%;
 }
 
 .header__subtitle{
@@ -322,13 +326,18 @@ MEDIA QUERIES
 
 */
 
-@media (min-width:390px){
+@media (min-width:350px){
+    .header {
+        padding-top: 5rem;
+    }
+
     .header__title{
         width: 80%;
     }
 }
 
 @media (min-width:500px){
+
     .navbar{
         flex-direction: row;
         padding-top: 1rem;
