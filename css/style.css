@@ -80,10 +80,9 @@ body{
     top: 10px;
     width: 100%;
     padding: 0 5%;
-    /* right: 10px; */
-
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .navbar__item {
@@ -96,26 +95,19 @@ body{
     color: white;
     padding-right: 30px;
     text-decoration: none;
-
+    display: none;
 }
-
-.sm-links{
-    padding-top: 10%;
-    display: flex;
-    flex-direction: column;
-}
-
 
 .navigation__link:hover{
     text-decoration: underline;
 }
 
-/* .fa-github-square {
-    size: 5rem;
-    color: blue;
-} */
-
-
+.sm-links{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
 
 .oclock-link {
     text-decoration: underline;
@@ -132,14 +124,35 @@ body{
 .navbar__item > .fab {
     font-size: 2rem;
     color: white;
-    /* padding: 0.5rem 2rem; */
 }
 
 .navigation{
-    visibility: hidden;
+    width: 1.75rem;
+    height: 1.75rem;
+    align-self: flex-end;
+    position: relative;
 }
 
+.navigation__burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    width: 100%;
+    height: 100%;
+    padding: 3px 0;
+}
 
+.burger-line {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+
+}
 
 /* container */
 
@@ -307,19 +320,34 @@ MEDIA QUERIES
 }
 
 @media (min-width:500px){
+    .navbar{
+        flex-direction: row;
+        padding-top: 1rem;
+    }
 
     .navigation{
         visibility: visible;
         font-size: 0.9rem;
+        align-self: flex-start;
+        width: 100%;
     }
 
     .navigation__link{
-        padding-right: 7px;
+        display: inline;
+    }
+
+    .navigation__burger {
+        display: none;
+    }
+
+    .navigation__link{
+        padding-right: 0.5rem;
     }
 
     .sm-links{
         padding-top: 0;
     }
+
 }
 
 @media (min-width:768px){
@@ -341,7 +369,7 @@ MEDIA QUERIES
     .navbar__item > .fab {
         font-size: 2rem;
         color: white;
-        padding: 0.5rem 2rem;
+        padding: 0 2rem;
     }
 
     .sm-links{
