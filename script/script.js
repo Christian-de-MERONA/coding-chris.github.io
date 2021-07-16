@@ -110,7 +110,10 @@ let app = {
 
     },
     handleMenu: function(e){
-        document.querySelector(".navbar").classList.toggle("burger-menu-open");
+
+        if(window.innerWidth < 500) {
+            document.querySelector(".navbar").classList.toggle("burger-menu-open");
+        }
     }
     
 };
