@@ -9,6 +9,11 @@ let app = {
         // document.addEventListener("click", app.insertModale);
 
         document.querySelector(".navigation__burger").addEventListener("click", app.handleMenu);
+        
+        let navLinks = document.querySelectorAll(".navigation__link");
+        navLinks.forEach(element =>(
+            element.addEventListener("click", app.handleMenu)
+        ))
 
     },
     addSkillsToDOM:function(){
